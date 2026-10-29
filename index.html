@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wood Chipper 2026 — Time for a Clean Cut</title>
+<meta name="description" content="Wood Chipper 2026: a campaign for efficiency, safety, and community. Shred the bureaucracy. Cut through waste. Bring results.">
+<meta property="og:title" content="Wood Chipper 2026 — Time for a Clean Cut">
+<meta property="og:description" content="Shred the bureaucracy. Cut through waste. Bring results. For the people, for the forest, for progress.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/town-hall.webp">
+<style>
+:root{
+  --navy:#0b2a5b; --navy-dark:#071d40; --gold:#d9a62e; --gold-light:#f0c75e;
+  --red:#b02a30; --paper:#f7f4ec; --ink:#1c2430; --muted:#5b6472;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,'Times New Roman',serif;background:var(--paper);color:var(--ink);line-height:1.65}
+h1,h2,h3,.sans{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif}
+a{color:var(--navy)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+/* NAV */
+.nav{background:var(--navy-dark);position:sticky;top:0;z-index:50;box-shadow:0 2px 10px rgba(0,0,0,.25)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:0;padding-bottom:0;min-height:64px}
+.brand{color:#fff;text-decoration:none;font-weight:800;letter-spacing:1px;font-size:1.05rem}
+.brand span{color:var(--gold)}
+.nav-links{display:flex;gap:4px;align-items:center;flex-wrap:wrap}
+.nav-links a{color:#e8ecf3;text-decoration:none;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;font-size:.92rem;padding:10px 12px;border-radius:6px}
+.nav-links a:hover{background:rgba(255,255,255,.1)}
+.btn{display:inline-block;background:var(--red);color:#fff !important;text-decoration:none;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;font-weight:700;padding:12px 26px;border-radius:8px;border:none;cursor:pointer;font-size:1rem}
+.btn:hover{background:#8f2126}
+.btn.gold{background:var(--gold);color:var(--navy-dark) !important}
+.btn.gold:hover{background:var(--gold-light)}
+.btn.navy{background:var(--navy)}
+.btn.navy:hover{background:var(--navy-dark)}
+/* HERO */
+.hero{background:linear-gradient(180deg,var(--navy-dark),var(--navy));color:#fff;padding:64px 0 72px;text-align:center}
+.hero .kicker{color:var(--gold);letter-spacing:3px;font-size:.85rem;font-weight:700;margin-bottom:14px}
+.hero h1{font-size:clamp(2.4rem,6vw,4.2rem);line-height:1.08;margin-bottom:14px}
+.hero h1 .accent{color:var(--gold)}
+.hero p.lede{font-size:1.25rem;color:#dfe5ef;max-width:640px;margin:0 auto 10px}
+.hero .date{color:var(--gold-light);font-weight:700;letter-spacing:1px;margin:18px 0 26px}
+.hero .cta-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.hero-img{margin-top:44px;border-radius:12px;overflow:hidden;box-shadow:0 18px 50px rgba(0,0,0,.4);max-width:900px;margin-left:auto;margin-right:auto}
+.hero-img img{display:block;width:100%;height:auto}
+.strip{background:var(--gold);color:var(--navy-dark);text-align:center;padding:12px 10px;font-weight:700;letter-spacing:2px;font-size:.95rem}
+/* SECTIONS */
+section{padding:64px 0}
+.sec-head{text-align:center;margin-bottom:40px}
+.sec-head .eyebrow{color:var(--red);font-weight:700;letter-spacing:3px;font-size:.8rem;margin-bottom:10px}
+.sec-head h2{font-size:clamp(1.7rem,4vw,2.5rem);color:var(--navy);margin-bottom:10px}
+.sec-head p{color:var(--muted);max-width:640px;margin:0 auto}
+/* PLATFORM */
+.planks{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
+.plank{background:#fff;border-top:6px solid var(--navy);border-radius:10px;padding:30px 28px;box-shadow:0 6px 22px rgba(11,42,91,.08)}
+.plank:nth-child(2){border-top-color:var(--red)}
+.plank:nth-child(3){border-top-color:var(--gold)}
+.plank .num{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;font-weight:800;color:var(--gold);font-size:.85rem;letter-spacing:2px}
+.plank h3{color:var(--navy);font-size:1.35rem;margin:8px 0 12px}
+.plank p{color:#3c4452;font-size:1rem}
+.values{margin-top:34px;text-align:center;background:var(--navy);color:#fff;border-radius:10px;padding:26px 20px}
+.values strong{color:var(--gold);letter-spacing:1px}
+/* CANDIDATE */
+.candidate{background:#fff}
+.cand-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.cand-grid img{width:100%;border-radius:12px;box-shadow:0 12px 34px rgba(0,0,0,.14)}
+.cand-grid h2{color:var(--navy);font-size:clamp(1.7rem,4vw,2.4rem);margin-bottom:14px}
+.cand-grid p{margin-bottom:14px;color:#3c4452}
+.fact-list{list-style:none;margin-top:18px}
+.fact-list li{padding:10px 0;border-bottom:1px solid #e6e1d4;font-size:.98rem}
+.fact-list li strong{color:var(--navy)}
+@media(max-width:760px){.cand-grid{grid-template-columns:1fr}}
+/* GALLERY */
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.g-item{background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 6px 20px rgba(11,42,91,.08)}
+.g-item img{display:block;width:100%;height:260px;object-fit:cover}
+.g-item .cap{padding:12px 16px;font-size:.92rem;color:var(--muted)}
+.g-item .cap strong{color:var(--navy);display:block;font-size:.95rem}
+/* VOLUNTEER */
+.volunteer{background:var(--navy);color:#fff}
+.volunteer .sec-head h2{color:#fff}
+.volunteer .sec-head p{color:#c9d2e2}
+.vol-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-bottom:36px}
+.vol-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:10px;padding:24px}
+.vol-card h3{color:var(--gold);font-size:1.1rem;margin-bottom:8px}
+.vol-card p{font-size:.95rem;color:#dbe2ef}
+.vol-cta{text-align:center}
+.vol-cta p{margin-bottom:18px;color:#dbe2ef}
+/* CONTACT */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+@media(max-width:760px){.contact-grid{grid-template-columns:1fr}}
+.contact-card{background:#fff;border-radius:10px;padding:30px;box-shadow:0 6px 22px rgba(11,42,91,.08)}
+.contact-card h3{color:var(--navy);margin-bottom:10px}
+.big-mail{font-size:1.25rem;font-weight:700;color:var(--red);text-decoration:none;word-break:break-all}
+.big-mail:hover{text-decoration:underline}
+.donate-note{margin-top:26px;background:#fdf6e3;border:1px solid #ecd9a0;border-radius:10px;padding:22px}
+.donate-note h3{color:var(--navy);margin-bottom:8px}
+.donate-note p{font-size:.97rem;color:#3c4452}
+/* FOOTER */
+footer{background:var(--navy-dark);color:#aeb9cf;padding:36px 0;text-align:center;font-size:.9rem}
+footer .paid{color:var(--gold);font-weight:700;letter-spacing:1px;margin-bottom:10px}
+footer a{color:#dfe5ef}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="brand sans" href="#top">WOOD CHIPPER <span>2026</span></a>
+    <div class="nav-links sans">
+      <a href="#platform">Platform</a>
+      <a href="#candidate">The Candidate</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#volunteer">Volunteer</a>
+      <a href="#contact">Contact</a>
+      <a class="btn gold" style="padding:8px 18px" href="#volunteer">Join Us</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="kicker sans">OFFICIAL CAMPAIGN SITE</div>
+    <h1>Elect the <span class="accent">Wood Chipper</span></h1>
+    <p class="lede">Time for a clean cut. A campaign for efficiency, safety, and community — for the people, for the forest, for progress.</p>
+    <div class="date sans">★ &nbsp;NOVEMBER 3, 2026&nbsp; ★</div>
+    <div class="cta-row">
+      <a class="btn gold" href="#platform">Read the Platform</a>
+      <a class="btn" href="#volunteer">Volunteer</a>
+    </div>
+    <div class="hero-img">
+      <img src="assets/town-hall.webp" alt="Wood Chipper 2026 campaign launch at Town Hall with supporters and yard signs">
+    </div>
+  </div>
+</header>
+
+<div class="strip sans">SHRED THE BUREAUCRACY &nbsp;•&nbsp; CUT THROUGH WASTE &nbsp;•&nbsp; BRING RESULTS</div>
+
+<section id="platform">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow sans">OUR PLATFORM</div>
+      <h2>A Clear Record. A Sharper Plan.</h2>
+      <p>Three commitments. No fine print, no spin — just the work, done right.</p>
+    </div>
+    <div class="planks">
+      <div class="plank">
+        <div class="num sans">PLANK ONE</div>
+        <h3>Shred the Bureaucracy</h3>
+        <p>Red tape doesn't serve anyone. The Wood Chipper will cut permitting delays, simplify local processes, and make government paperwork something you finish in an afternoon — not a season. Fewer forms, faster answers, cleaner outcomes.</p>
+      </div>
+      <div class="plank">
+        <div class="num sans">PLANK TWO</div>
+        <h3>Cut Through Waste</h3>
+        <p>Every dollar of public money should work as hard as the people who earned it. That means open books, honest audits, and an end to spending that serves the process instead of the public. Efficiency isn't a slogan — it's the job.</p>
+      </div>
+      <div class="plank">
+        <div class="num sans">PLANK THREE</div>
+        <h3>Bring Results</h3>
+        <p>Promises are cheap; results are what count. Safer streets, cleaner neighborhoods, and projects that actually finish. The Wood Chipper measures success the only way that matters: what got done, and who it helped.</p>
+      </div>
+    </div>
+    <div class="values sans">
+      <strong>COMMITTED TO EFFICIENCY ★ SAFETY ★ COMMUNITY</strong>
+    </div>
+  </div>
+</section>
+
+<section id="candidate" class="candidate">
+  <div class="wrap">
+    <div class="cand-grid">
+      <img src="assets/campaign-poster.webp" alt="Official Wood Chipper 2026 campaign poster">
+      <div>
+        <div class="eyebrow sans" style="color:var(--red);font-weight:700;letter-spacing:3px;font-size:.8rem;margin-bottom:10px">MEET THE CANDIDATE</div>
+        <h2>Steady. Relentless. All Business.</h2>
+        <p>The Wood Chipper has spent its entire career doing exactly what it says it will do. It doesn't grandstand, it doesn't flip-flop, and it has never once blamed someone else for a jam. When there's a pile of problems in front of it, it gets to work — and it doesn't stop until the job is done.</p>
+        <p>Supporters call it the hardest worker they'll never have to supervise. Critics call it single-minded. The record speaks for itself: everything that goes in comes out handled.</p>
+        <ul class="fact-list">
+          <li><strong>Position on the issues:</strong> unchanged since day one — it only sharpens them.</li>
+          <li><strong>Work ethic:</strong> full days, no breaks, no excuses.</li>
+          <li><strong>Special skill:</strong> turning big messy piles into something useful.</li>
+          <li><strong>Campaign promise:</strong> a clean cut, every time.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow sans">ON THE TRAIL</div>
+      <h2>Campaign Gallery</h2>
+      <p>Yard signs going up, mulch getting dropped, voters getting met. The campaign in action.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="g-item"><img src="assets/yard-sign-lawn.webp" alt="Wood Chipper 2026 yard sign on a suburban lawn" loading="lazy"><div class="cap"><strong>Yard Sign</strong>Show your support — request one today.</div></div>
+      <div class="g-item"><img src="assets/yellow-yard-sign.webp" alt="Volunteer planting a Wood Chipper 2026 yard sign" loading="lazy"><div class="cap"><strong>Sign Planting</strong>Volunteers hitting the neighborhoods.</div></div>
+      <div class="g-item"><img src="assets/mulch-drop.webp" alt="Wood Chipper producing a large mulch pile in a community garden" loading="lazy"><div class="cap"><strong>Mulch Drop</strong>Results you can see.</div></div>
+      <div class="g-item"><img src="assets/town-hall.webp" alt="Meet the candidate event at Town Hall" loading="lazy"><div class="cap"><strong>Town Hall</strong>Launch week — meet the candidate.</div></div>
+      <div class="g-item"><img src="assets/platform-flyer.webp" alt="Wood Chipper 2026 platform flyer" loading="lazy"><div class="cap"><strong>The Platform</strong>Three planks, zero fluff.</div></div>
+      <div class="g-item"><img src="assets/media-suite.webp" alt="Wood Chipper 2026 full campaign and media suite" loading="lazy"><div class="cap"><strong>Media Kit</strong>Website, social, and print materials.</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="volunteer" class="volunteer">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow sans" style="color:var(--gold)">GET INVOLVED</div>
+      <h2>Join the Movement</h2>
+      <p>Campaigns are won by people, not machines — well, except this one. Here's how to help.</p>
+    </div>
+    <div class="vol-grid">
+      <div class="vol-card"><h3 class="sans">Door Knocking</h3><p>Talk to neighbors about the clean-cut agenda. Routes and materials provided.</p></div>
+      <div class="vol-card"><h3 class="sans">Phone Banking</h3><p>Reach voters from your own kitchen table. Scripts provided, awkwardness optional.</p></div>
+      <div class="vol-card"><h3 class="sans">Yard Signs</h3><p>Request a sign, plant it proud, and watch the neighborhood ask questions.</p></div>
+      <div class="vol-card"><h3 class="sans">Events</h3><p>Rallies, town halls, and mulch drops. Bring a friend — bring two.</p></div>
+    </div>
+    <div class="vol-cta">
+      <p>Ready to help shred the competition? Email the campaign to sign up.</p>
+      <a class="btn gold" href="mailto:Votechipper2026@gmail.com?subject=Volunteering%20for%20Wood%20Chipper%202026">Volunteer Today</a>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow sans">GET IN TOUCH</div>
+      <h2>Contact the Campaign</h2>
+      <p>Questions, press inquiries, sign requests, or just want to talk shop — reach out.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3 class="sans">Email</h3>
+        <p style="margin-bottom:14px;color:var(--muted)">The fastest way to reach the campaign team.</p>
+        <a class="big-mail sans" href="mailto:Votechipper2026@gmail.com">Votechipper2026@gmail.com</a>
+        <p style="margin-top:18px;color:var(--muted)">Social: <strong style="color:var(--navy)">@woodchipper2026</strong></p>
+      </div>
+      <div>
+        <div class="donate-note">
+          <h3 class="sans">Contribute</h3>
+          <p>This is a grassroots operation — every contribution goes straight to signs, materials, and outreach. To donate, email the campaign at <a href="mailto:Votechipper2026@gmail.com?subject=Donation%20to%20Wood%20Chipper%202026">Votechipper2026@gmail.com</a> and the team will get you set up. No amount too small; no bureaucracy attached.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="paid sans">PAID FOR BY THE WOOD CHIPPER CAMPAIGN COMMITTEE</div>
+    <p>© 2026 Wood Chipper Campaign Committee &nbsp;•&nbsp; <a href="mailto:Votechipper2026@gmail.com">Votechipper2026@gmail.com</a> &nbsp;•&nbsp; @woodchipper2026</p>
+    <p style="margin-top:8px">It's time to shred the competition.</p>
+  </div>
+</footer>
+
+</body>
+</html>
