@@ -8,7 +8,16 @@
 <meta property="og:title" content="Wood Chipper 2026 — Time for a Clean Cut">
 <meta property="og:description" content="Shred the bureaucracy. Cut through waste. Bring results. For the people, for the forest, for progress.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="assets/town-hall.webp">
+<meta property="og:url" content="https://woodchipper2026.github.io/">
+<meta property="og:image" content="https://woodchipper2026.github.io/assets/town-hall.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Wood Chipper 2026 — Time for a Clean Cut">
+<meta name="twitter:description" content="Shred the bureaucracy. Cut through waste. Bring results. For the people, for the forest, for progress.">
+<meta name="twitter:image" content="https://woodchipper2026.github.io/assets/town-hall.webp">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230b2a5b'/%3E%3Ctext x='32' y='44' font-family='Arial,sans-serif' font-size='36' font-weight='bold' fill='%23d9a62e' text-anchor='middle'%3EW%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"Wood Chipper 2026","url":"https://woodchipper2026.github.io/","description":"Wood Chipper 2026 campaign: shred the bureaucracy, cut through waste, bring results."}
+</script>
 <style>
 :root{
   --navy:#0b2a5b; --navy-dark:#071d40; --gold:#d9a62e; --gold-light:#f0c75e;
@@ -44,6 +53,20 @@ a{color:var(--navy)}
 .hero-img{margin-top:44px;border-radius:12px;overflow:hidden;box-shadow:0 18px 50px rgba(0,0,0,.4);max-width:900px;margin-left:auto;margin-right:auto}
 .hero-img img{display:block;width:100%;height:auto}
 .strip{background:var(--gold);color:var(--navy-dark);text-align:center;padding:12px 10px;font-weight:700;letter-spacing:2px;font-size:.95rem}
+.countdown{margin:6px 0 4px;font-size:1.05rem;letter-spacing:1px;color:#fff}
+.countdown strong{color:var(--gold);font-size:1.3rem}
+/* ENDORSEMENTS */
+.quotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
+.quote{background:#fff;border-radius:10px;padding:28px;box-shadow:0 6px 22px rgba(11,42,91,.08);border-left:6px solid var(--gold)}
+.quote p{font-style:italic;color:#3c4452;margin-bottom:12px}
+.quote .who{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;font-weight:700;color:var(--navy);font-size:.92rem}
+.quote .stars{color:var(--gold);letter-spacing:3px;margin-bottom:10px}
+/* MOBILE NAV */
+@media(max-width:760px){
+  .nav .wrap{flex-direction:column;padding:10px 14px;gap:6px}
+  .nav-links{justify-content:center}
+  .nav-links a{padding:8px 9px;font-size:.85rem}
+}
 /* SECTIONS */
 section{padding:64px 0}
 .sec-head{text-align:center;margin-bottom:40px}
@@ -124,6 +147,7 @@ footer a{color:#dfe5ef}
     <h1>Elect the <span class="accent">Wood Chipper</span></h1>
     <p class="lede">Time for a clean cut. A campaign for efficiency, safety, and community — for the people, for the forest, for progress.</p>
     <div class="date sans">★ &nbsp;NOVEMBER 3, 2026&nbsp; ★</div>
+    <div class="countdown sans" id="countdown" aria-live="polite"></div>
     <div class="cta-row">
       <a class="btn gold" href="#platform">Read the Platform</a>
       <a class="btn" href="#volunteer">Volunteer</a>
@@ -186,7 +210,34 @@ footer a{color:#dfe5ef}
   </div>
 </section>
 
-<section id="gallery">
+<section id="endorsements">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow sans">ENDORSEMENTS</div>
+      <h2>What People Are Saying</h2>
+      <p>Don't take our word for it. Take theirs.</p>
+    </div>
+    <div class="quotes">
+      <div class="quote">
+        <div class="stars">★★★★★</div>
+        <p>"It took my entire brush pile and asked for nothing in return. That's public service."</p>
+        <div class="who">— Dana R., Satisfied Constituent</div>
+      </div>
+      <div class="quote">
+        <div class="stars">★★★★★</div>
+        <p>"I've watched a lot of candidates make promises. This one just makes mulch."</p>
+        <div class="who">— Marcus T., Local Voter</div>
+      </div>
+      <div class="quote">
+        <div class="stars">★★★★★</div>
+        <p>"Finally, a candidate with no skeletons in the closet. Only wood chips."</p>
+        <div class="who">— Priya S., Community Member</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" style="padding-top:0">
   <div class="wrap">
     <div class="sec-head">
       <div class="eyebrow sans">ON THE TRAIL</div>
@@ -256,5 +307,19 @@ footer a{color:#dfe5ef}
   </div>
 </footer>
 
+<script>
+(function(){
+  var el=document.getElementById('countdown');
+  var target=new Date('2026-11-03T00:00:00');
+  function tick(){
+    var now=new Date(), diff=target-now;
+    if(diff<=0){el.innerHTML='<strong>ELECTION DAY IS HERE — VOTE WOOD CHIPPER</strong>';return;}
+    var d=Math.floor(diff/864e5), h=Math.floor(diff/36e5)%24,
+        m=Math.floor(diff/6e4)%60, s=Math.floor(diff/1e3)%60;
+    el.innerHTML='ELECTION DAY IN <strong>'+d+'</strong> DAYS <strong>'+h+'</strong> HRS <strong>'+m+'</strong> MIN <strong>'+s+'</strong> SEC';
+  }
+  tick(); setInterval(tick,1000);
+})();
+</script>
 </body>
 </html>
